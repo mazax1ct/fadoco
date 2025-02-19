@@ -1,0 +1,25 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1280px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --color_black: #262626;
+    --color_red: #940000;
+    --color_green: #3AAA35;
+    --color_green_hovered: #32922D;
+    --color_white: #FBFBFB;
+    --color_grey_1: #8B8B8B;
+    --color_grey_2: #D2D2D2;
+    --color_grey_3: #F4F4F4;
+    --color_grey_4: #EDEDED;
+    --container_padding: 16px;
+    --header_min_height: 70px;
+    --primary_font: 'Montserrat', Arial, sans-serif;
+    --secondary_font: 'Unbounded', Arial, sans-serif;
+    @media(min-width: $sm) {
+        --container_padding: 24px;
+    }
+}

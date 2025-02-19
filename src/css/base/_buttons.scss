@@ -1,0 +1,113 @@
+.button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--primary_font);
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.7;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+
+    &.disabled,
+    &:disabled,
+    &[data-disabled] {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &--primary {
+        background-color: var(--color_green);
+        color: #fff;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--color_green_hovered);
+                color: #fff;
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--color_grey_1);
+            color: #fff;
+        }
+    }
+
+    &--secondary {
+        background-color: #fff;
+        border-color: var(--color_green);
+        color: var(--color_green);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--color_green);
+                color: #fff;
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: #fff;
+            border-color: var(--color_grey_1);
+            color: var(--color_grey_1);
+        }
+    }
+
+    &--warning {
+        background-color: #fff;
+        border-color: var(--color_red);
+        color: var(--color_red);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--color_red);
+                color: #fff;
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: #fff;
+            border-color: var(--color_grey_1);
+            color: var(--color_grey_1);
+        }
+    }
+
+    &--h_40 {
+        height: 40px;
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+
+    &--h_52 {
+        height: 52px;
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+}

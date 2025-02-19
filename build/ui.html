@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <link rel="preload" href="fonts/subset-Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Unbounded-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Unbounded-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="FADOCO">
+                </a>
+    
+                <div class="header__search">
+                    <form class="search-form" action="">
+                        <label class="search-form__label input-group">
+                            <input class="search-form__input input-group__input" type="text" name="q" placeholder="Поиск по сайту...">
+                        </label>
+    
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="header__phone">
+                    <a class="contact" href="tel:+79999999999">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 (999) 999-99-99</span>
+                    </a>
+                </div>
+    
+                <a class="header__callback button button--secondary button--h_52" href="#">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Акриловое покрытие
+                </li>
+            </ul>
+
+            <h2>Кнопки</h2>
+
+            <button class="button button--primary button--h_40" type="button">Кнопка</button>
+
+            <a class="button button--primary button--h_52" href="#">Ссылка</a>
+
+            <button class="button button--primary button--h_40" type="button" disabled>Кнопка</button>
+
+            <a class="button button--primary button--h_52 disabled">Ссылка</a>
+
+            <br> <br>
+
+            <button class="button button--secondary button--h_40" type="button">Кнопка</button>
+
+            <a class="button button--secondary button--h_52" href="#">Ссылка</a>
+
+            <button class="button button--secondary button--h_40" type="button" disabled>Кнопка</button>
+
+            <a class="button button--secondary button--h_52 disabled">Ссылка</a>
+
+            <br> <br>
+
+            <button class="button button--warning button--h_40" type="button">Кнопка</button>
+
+            <a class="button button--warning button--h_52" href="#">Ссылка</a>
+
+            <button class="button button--warning button--h_40" type="button" disabled>Кнопка</button>
+
+            <a class="button button--warning button--h_52 disabled">Ссылка</a>
+
+            <br> <br>
+
+            <h2>Чекбоксы</h2>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br>
+
+            <label class="checkbox">
+                <input type="checkbox" value="" name="" disabled checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a></span>
+            </label>
+
+            <br> <br>
+
+            <h2>Поля ввода</h2>
+
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="" placeholder="Имя">
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <input class="input-group__input error" type="text" name="" placeholder="Имя">
+                <div class="error-text">Заполните это поле</div>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="" placeholder="Имя" disabled>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="name" placeholder="Комментарий"></textarea>
+            </label>
+
+            <br>
+
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="name" placeholder="Комментарий" disabled></textarea>
+            </label>
+            <br>
+
+            <label class="input-group">
+                <textarea class="input-group__textarea error" name="name" placeholder="Комментарий"></textarea>
+                <div class="error-text">Заполните это поле</div>
+            </label>
+
+            <br>
+
+            <h2>Селекты</h2>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность">
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4">Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="select-wrapper">
+                <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность" disabled>
+                    <option></option>
+                    <option value="1">Хирург</option>
+                    <option value="2">Офтальмолог</option>
+                    <option value="3">Эндокринолог</option>
+                    <option value="4" selected>Терапевт</option>
+                    <option value="5">Гигапевт</option>
+                    <option value="6">Мегапевт</option>
+                    <option value="7">Килопевт</option>
+                    <option value="8">Певт</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+    
+        </div>
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/collapsing-menu.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

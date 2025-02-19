@@ -1,0 +1,36 @@
+.breadcrumbs {
+    @include list-reset;
+    display: flex;
+    font-size: 12px;
+    gap: 16px;
+    min-height: 52px;
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+    overflow-x: auto;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+    white-space: nowrap;
+
+    &__item {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+
+        &:not(:last-child) {
+            &::after {
+                background-color: var(--color_grey_1);
+                content: '';
+                display: block;
+                height: 1px;
+                width: 16px;
+            }
+        }
+    }
+
+    a {
+        align-items: center;
+        display: flex;
+        min-height: 52px;
+        text-decoration: none;
+    }
+}

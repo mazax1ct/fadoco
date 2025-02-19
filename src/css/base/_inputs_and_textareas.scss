@@ -1,0 +1,104 @@
+.input-group {
+    display: block;
+
+    &__input,
+    &__textarea {
+        background-color: #fff;
+        border: 1px solid var(--color_grey_2);
+        border-radius: 0;
+        box-shadow: none;
+        display: block;
+        font-family: var(--primary_font);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: border-color 0.3s;
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+            color: var(--color_black);
+            opacity: 1;
+            transition: color 0.3s;
+        }
+
+        &::-moz-placeholder {
+            color: var(--color_black);
+            opacity: 1;
+            transition: color 0.3s;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--color_black);
+            opacity: 1;
+            transition: color 0.3s;
+        }
+
+        &:focus {
+            border-color: var(--color_grey_1);
+
+            &::-webkit-input-placeholder {
+                color: var(--color_grey_1);
+            }
+
+            &::-moz-placeholder {
+                color: var(--color_grey_1);
+            }
+
+            &:-ms-input-placeholder {
+                color: var(--color_grey_1);
+            }
+        }
+
+        &:disabled {
+            background-color: var(--color_grey_3);
+            color: var(--color_grey_1);
+
+            &::-webkit-input-placeholder {
+                color: var(--color_grey_1);
+            }
+
+            &::-moz-placeholder {
+                color: var(--color_grey_1);
+            }
+
+            &:-ms-input-placeholder {
+                color: var(--color_grey_1);
+            }
+        }
+
+        &.error {
+            border-color: var(--color_red);
+        }
+    }
+
+    &__input {
+        height: 52px;
+    }
+
+    &__textarea {
+        @include scrollbar;
+        height: 138px;
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        resize: vertical;
+    }
+}
+
+.error-text {
+    color: var(--color_red);
+    font-size: 12px;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
