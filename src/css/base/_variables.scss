@@ -21,5 +21,9 @@ $fhd: 1900px;
     --secondary_font: 'Unbounded', Arial, sans-serif;
     @media(min-width: $sm) {
         --container_padding: 24px;
+        --header_min_height: 105px;
+    }
+    @media(min-width: $hd) {
+        --header_min_height: 150px;
     }
 }
