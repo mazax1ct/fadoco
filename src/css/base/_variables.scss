@@ -19,11 +19,15 @@ $fhd: 1900px;
     --header_min_height: 70px;
     --primary_font: 'Montserrat', Arial, sans-serif;
     --secondary_font: 'Unbounded', Arial, sans-serif;
+    --section_vertical_gap: 48px;
+    --container_max_width: 1248px;
     @media(min-width: $sm) {
         --container_padding: 24px;
         --header_min_height: 105px;
+        --section_vertical_gap: 64px;
     }
     @media(min-width: $hd) {
         --header_min_height: 150px;
+        --section_vertical_gap: 104px;
     }
 }

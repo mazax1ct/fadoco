@@ -1,10 +1,59 @@
 .form {
-    &__row {
+    background-color: #fff;
+    border: 1px solid var(--color_grey_2);
+    max-width: 328px;
+    padding: 24px 16px;
+    @media(min-width: $sm) {
+        max-width: 534px;
+        padding: 48px;
+    }
+    @media(min-width: $hd) {
+        max-width: 690px;
+    }
+
+    &__logo {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__title {
+        font-family: var(--secondary_font);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        text-align: center;
+        @media(min-width: $sm) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        color: var(--color_red);
+        font-family: var(--secondary_font);
+        margin-bottom: 16px;
+        text-align: center;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .button,
+    .input-group {
         &:not(:last-child) {
-            margin-bottom: 12px;
-            @media(min-width: $fhd) {
-                margin-bottom: 16px;
-            }
+            margin-bottom: 16px;
         }
     }
 }

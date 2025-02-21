@@ -1,0 +1,51 @@
+.form-block_1 {
+    @media(min-width: $sm) {
+        padding-top: var(--section_vertical_gap);
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        @media(max-width: $sm - 0.02px) {
+            margin-bottom: 48px;
+        }
+        @media(min-width: $sm) {
+            left: 50%;
+            max-height: 740px;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            width: 100vw;
+            z-index: 1;
+        }
+
+        img,
+        picture {
+            display: block;
+            width: 100%;
+            @media(min-width: $sm) {
+                max-height: 740px;
+            }
+        }
+
+        img {
+            @media(min-width: $sm) {
+                object-fit: cover;
+                object-position: center bottom;
+            }
+        }
+    }
+
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        @media(min-width: $sm) {
+            margin-left: 0;
+            position: relative;
+            z-index: 2;
+        }
+        @media(min-width: $hd) {
+            margin-left: 100px;
+        }
+    }
+}

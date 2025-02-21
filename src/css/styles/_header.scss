@@ -3,12 +3,21 @@
     border-bottom: 1px solid var(--color_grey_4);
     font-size: 14px;
     left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     z-index: 10;
     @media(min-width: $hd) {
         min-height: var(--header_min_height);
+    }
+
+    &.is-out {
+        transform: translateY(-100%);
+    }
+
+    &.is-scrolled {
+        position: fixed;
+        transition: transform 0.2s;
     }
 
     &__top {
@@ -264,8 +273,8 @@
                     flex-grow: 1;
                 }
 
-                > a,
-                > button {
+                > button,
+                > a {
                     @media(min-width: $hd) {
                         align-items: center;
                         display: flex;
