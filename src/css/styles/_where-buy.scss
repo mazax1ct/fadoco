@@ -24,6 +24,18 @@
     &__cities {
         align-items: center;
         display: flex;
+        gap: 24px;
+        flex-grow: 1;
+        max-width: 455px;
+
+        .combobox {
+            flex-grow: 1;
+        }
+    }
+
+    &__cities-title {
+        font-size: 14px;
+        font-weight: 500;
     }
 
     &__search {
@@ -69,6 +81,10 @@
     font-size: 14px;
     padding: 24px var(--container_padding);
     transition: background-color 0.3s;
+
+    &.hidden {
+        display: none;
+    }
 
     &.is-active {
         background-color: var(--color_grey_3);

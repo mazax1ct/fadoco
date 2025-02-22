@@ -1,0 +1,23 @@
+.contacts {
+    background-color: var(--color_grey_3);
+    padding: 24px var(--container_padding);
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    iframe {
+        display: block;
+        margin-top: 16px;
+        width: 100%;
+    }
+}

@@ -169,3 +169,73 @@ $(document).on('click', '.js-address-toggler', function () {
   }
   return false;
 });
+
+//тогглер комбобокса
+$(document).on('click', '.js-combobox-toggler', function () {
+  var combobox = $(this).closest('.combobox');
+
+  if(combobox.hasClass('is-open')) {
+    combobox.removeClass('is-open')
+  } else {
+    $('.combobox').removeClass('is-open');
+    combobox.addClass('is-open')
+  }
+  return false;
+});
+
+//поиск адресов
+$(document).on('click', '.js-cities .combobox__link', function () {
+  $(this).closest('.combobox').find('.combobox__link').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.combobox').find('.combobox__value').text($(this).text());
+  $(this).closest('.combobox').removeClass('is-open');
+  var searchPhrase = $(this).text();
+
+  if(searchPhrase === 'Все') {
+    $('.address-item').removeClass('hidden').show();
+    $('.js-no-results').remove();
+  } else {
+    $('.address-item__city').each(function(index, el) {
+      $('.address-item').removeAttr('style');
+      $('.js-address-search').val('');
+
+      if(el.innerText !== searchPhrase) {
+        el.closest('.address-item').classList.add('hidden');
+      } else {
+       el.closest('.address-item').classList.remove('hidden');
+      }
+
+      if($('.address-item:visible').length < 1) {
+        if($('.js-no-results').length === 0) {
+          $('.where-buy__list').append('<p class="js-no-results">Ничего не найдено</p>');
+        }
+      } else {
+        $('.js-no-results').remove();
+      }
+    });
+  }
+
+  return false;
+});
+
+jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+    return function( elem ) {
+        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+    };
+});
+
+$(document).on('input', '.js-address-search', function () {
+  let query = $(this).val();
+  let el = $('.js-address:Contains("'+query+'")');
+
+  $('.address-item:not(.hidden)').hide();
+  el.closest('.address-item:not(.hidden)').show();
+
+  if($('.address-item:visible').length < 1) {
+    if($('.js-no-results').length === 0) {
+      $('.where-buy__list').append('<p class="js-no-results">Ничего не найдено</p>');
+    }
+  } else {
+    $('.js-no-results').remove();
+  }
+});
