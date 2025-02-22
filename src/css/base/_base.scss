@@ -31,6 +31,10 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 
+    &.compensate-for-scrollbar {
+        margin: 0;
+    }
+
     &.is-overflow {
         overflow: hidden;
     }

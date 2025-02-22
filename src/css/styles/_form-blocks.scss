@@ -7,6 +7,8 @@
 
     &__bg {
         @media(max-width: $sm - 0.02px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
             margin-bottom: 48px;
         }
         @media(min-width: $sm) {
