@@ -239,3 +239,27 @@ $(document).on('input', '.js-address-search', function () {
     $('.js-no-results').remove();
   }
 });
+
+//табы
+$(document).on('click', '.tabs-nav__button', function () {
+  $(this).closest('.tabs-nav').find('.tabs-nav__button').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
+  return false;
+});
+
+//документация
+$(document).on('mouseenter', '.doc-link', function () {
+  var src = $(this).attr('data-src');
+  var retina = $(this).attr('data-retina');
+  var preview = $(this).closest('.docs').find('.js-preview');
+
+  if(src !== undefined && retina !== undefined) {
+    preview.attr('src', src);
+    preview.attr('srcset', retina);
+    preview.show();
+  } else {
+    preview.hide();
+  }
+});

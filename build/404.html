@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page">
+<body class="page page--404">
     <header class="header">
         <div class="container">
             <div class="header__top">
@@ -128,52 +128,29 @@
 
     <main class="page__content">
         <div class="container">
+            <div class="page_404">
+                <div class="page_404__404"><img src="images/content/page_404/404.svg" alt=""></div>
 
+                <div class="page_404__text-block">
+                    <h1>Извините, страница не&nbsp;найдена</h1>
 
-            <section class="form-block_1">
-                <div class="form-block_1__bg">
-                    <picture>
-                        <source srcset="images/content/forms/form_1_desk.jpg, images/content/forms/form_1_desk@2x.jpg 2x" media="(min-width: 1024px)">
-                        <img src="images/content/forms/form_1_mob.jpg" srcset="images/content/forms/form_1_mob@2x.jpg 2x" alt="">
-                    </picture>
-                </div>
-            
-                <div class="form">
-                    <form action="">
-                        <div class="form__logo">
-                            <img src="images/logo.svg" alt="FADOCO">
-                        </div>
-            
-                        <h2 class="form__title">Вы архитектор,<br> дизайнер, строитель?</h2>
-            
-                        <p class="form__text">Закажите бесплатные образцы</p>
-            
-                        <label class="input-group">
-                            <input class="input-group__input" type="text" name="name" placeholder="Имя">
+                    <p>Возможно, она была удалена или в запросе был указан неверный адрес.<br> Попробуйте вернуться на главную страницу или воспользуйтесь поиском:</p>
+
+                    <a class="button button--primary" href="#">На главную</a>
+
+                    <form class="search-form" action="">
+                        <label class="search-form__label input-group">
+                            <input class="search-form__input input-group__input" type="text" name="q" placeholder="Поиск по сайту...">
                         </label>
-            
-                        <label class="input-group">
-                            <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон">
-                        </label>
-            
-                        <label class="input-group">
-                            <input class="js-email-mask input-group__input" type="text" name="email" placeholder="Email">
-                        </label>
-            
-                        <label class="input-group">
-                            <textarea class="input-group__textarea" name="comment" placeholder="Комментарий"></textarea>
-                        </label>
-            
-                        <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
-            
-                        <label class="checkbox">
-                            <input type="checkbox" name="terms" checked>
-                            <span class="checkbox__icon"></span>
-                            <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
-                        </label>
+
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
                     </form>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 

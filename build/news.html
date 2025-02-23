@@ -57,7 +57,7 @@
                     </a>
                 </div>
     
-                <a class="header__callback button button--secondary button--h_52" href="#">Заказать звонок</a>
+                <a class="header__callback button button--secondary button--h_52" href="javascript:void(0)" data-fancybox="callback_1" data-src="#callback">Заказать звонок</a>
     
                 <button class="js-menu-toggler header__burger" type="button" title="Открыть меню">
                     <svg aria-hidden="true">
@@ -120,7 +120,7 @@
                         </a>
                     </div>
     
-                    <a class="header__callback button button--secondary button--h_52" href="#">Заказать звонок</a>
+                    <a class="header__callback button button--secondary button--h_52" href="javascript:void(0)" data-fancybox="callback_2" data-src="#callback">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -435,8 +435,36 @@
         </div>
     </footer>
 
-    <div class="popup">
+    <div id="callback" class="popup form">
+        <form action="">
+            <div class="form__logo">
+                <img src="images/logo.svg" alt="FADOCO">
+            </div>
     
+            <h2 class="form__title">Оставьте свой номер</h2>
+    
+            <p class="form__text">Специалист перезвонит Вам<br> в течение 10-ти минут</p>
+    
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="name" placeholder="Имя">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон">
+            </label>
+    
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="comment" placeholder="Комментарий"></textarea>
+            </label>
+    
+            <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
+    
+            <label class="checkbox">
+                <input type="checkbox" name="terms" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
+            </label>
+        </form>
     </div>
 
     <script src="js/jquery-3.7.1.min.js"></script>

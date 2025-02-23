@@ -39,6 +39,13 @@ html {
         overflow: hidden;
     }
 
+    &--404 {
+        .page__content {
+            background: url("../images/content/page_404/img@2x.jpg") no-repeat 50% 0 / cover var(--color_grey_2);
+            padding-bottom: 0;
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 70px;
