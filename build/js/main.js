@@ -124,6 +124,52 @@ $(document).ready(function() {
       },
     });
   });
+
+  //слайдер информационных карточек
+  if($('body').width() < 768){
+    $('.js-info-cards-slider').each(function(index, el) {
+      var slider = el.children[1];
+
+      new Swiper(slider, {
+        loop: true,
+        slidesPerView: 'auto',
+        slidesOffsetBefore: 16,
+        spaceBetween: 24,
+
+        navigation: {
+          nextEl: '.js-cards-slider-next[data-slider="'+el.dataset.slider+'"]',
+          prevEl: '.js-cards-slider-prev[data-slider="'+el.dataset.slider+'"]',
+        },
+
+        pagination: {
+          el: '.js-cards-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+          type: 'bullets',
+          clickable: true
+        },
+      });
+    });
+  }
+
+  setTimeout(function() {
+    if($('.infinite-slider').length > 0) {
+      $('.infinite-slider').each(function (index, el) {
+        var el_inner = $(el).find('.infinite-slider__inner');
+        var slider_item = $(el).find('.infinite-slider__slide');
+
+        var slider_item_width = slider_item.width() + 66;
+
+        console.log(slider_item_width);
+
+        $(el_inner).css('--slider_item_width', '-' + slider_item_width + 'px');
+
+        for (i = 0; i < 5; i++) {
+          slider_item.clone().appendTo(el_inner);
+        };
+
+        $(el_inner).addClass('marquee');
+      });
+    }
+  }, 200);
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе

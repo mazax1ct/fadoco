@@ -97,6 +97,53 @@
         }
     }
 
+    &--not_slider {
+        @media(max-width: $sm - 0.02px) {
+            margin-left: calc(0.02px - var(--container_padding));
+            margin-right: calc(0.02px - var(--container_padding));
+        }
+
+        .cards-slider__nav,
+        .swiper-pagination {
+            @media(min-width: $sm) {
+                display: none;
+            }
+        }
+
+        .cards-slider__top,
+        .swiper-pagination {
+            @media(max-width: $sm - 0.02px) {
+                padding-left: var(--container_padding);
+                padding-right: var(--container_padding);
+            }
+        }
+
+        .swiper-wrapper {
+            @media(min-width: $sm) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+
+            .swiper-slide {
+                height: auto;
+                @media(max-width: $sm - 0.02px) {
+                    width: 328px;
+                }
+                @media(min-width: $sm) {
+                    width: calc(100% / 2 - 24px / 2);
+                }
+                @media(min-width: $md) {
+                    width: calc(100% / 3 - 24px * 2 / 3);
+                }
+
+                .info-card {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
     .swiper-slide {
         height: auto;
         display: flex;

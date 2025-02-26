@@ -1,0 +1,23 @@
+.info-card {
+    border: 1px solid var(--color_grey_2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+
+    &__icon {
+        img {
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    p {
+        margin-top: auto;
+    }
+}

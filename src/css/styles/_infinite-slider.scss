@@ -1,0 +1,34 @@
+.infinite-slider {
+    overflow: hidden;
+
+    &__inner {
+        display: flex;
+        gap: 66px;
+    }
+
+    &__slide {
+        align-items: center;
+        display: flex;
+        gap: 66px;
+        flex-shrink: 0;
+
+        img {
+            flex-shrink: 0;
+        }
+    }
+}
+
+.marquee {
+    --slider_item_width: -50%;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(var(--slider_item_width));
+    }
+}

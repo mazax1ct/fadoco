@@ -128,28 +128,193 @@
 
     <main class="page__content">
         <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Документация
+                </li>
+            </ul>
 
-            <section class="page__section page__section--bottom_gap page__section--top_gap page__section--grey full-width">
-                <div class="container">
-                    <h2>Производство продукции FADOCO interio</h2>
+            <section class="page__section page__section--bottom_gap">
+                <h1>Документация</h1>
 
-                    <div class="text-block_3">
-                        <h3 class="text-block_3__title">Декоративные стеновые панели Российской марки FADOCO interio™ для внутренней отделки</h3>
+                <div class="tabs">
+                    <div class="tabs-nav">
+                        <ul class="tabs-nav__list">
+                            <li>
+                                <button class="tabs-nav__button is-active" type="button" data-target="1">Сертификаты</button>
+                            </li>
+                            <li>
+                                <button class="tabs-nav__button" type="button" data-target="2">Инструкции по монтажу</button>
+                            </li>
+                            <li>
+                                <button class="tabs-nav__button" type="button" data-target="3">Презентации</button>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="text-block_3__inner">
-                            <div class="text-block_3__left">
-                                <p>На производстве стеновых панелей FADOCO interio™ установлена самая современная агрегатно-модульная линия для окраски плитных материалов: окраска панелей для стен и потолков на основе гипсокартона ГКЛ, негорючего СМЛ
-                                    листа, ГСП, гипсовинила, акриловыми рал красками с нанесением высокопрочного лака на водной основе, ламинирование гипсокартонных и СМЛ панелей ПВХ пленкой, декорирование HPL пластиком, декоративные перфорированные
-                                    акустические панели.</p>
-                                <p>Также мы являемся прямыми бесперебойными поставщиками не декорированных СМЛ листов и плит, применяемых в строительстве модульных домов, внешнем и внутреннем оформлении стен, потолков и перегородок.</p>
 
-                                <img src="images/content/about/img_3.jpg" srcset="images/content/about/img_3@2x.jpg 2x" alt="">
+                    <div class="tab is-active" data-target="1">
+                        <div class="docs">
+                            <div class="docs__list">
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Сертификат соответствия.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Пожарный сертификат.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_2.jpg" data-retina="images/content/docs/img_2@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Экспертное заключение.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Протокол испытаний.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Сертификат соответствия.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_2.jpg" data-retina="images/content/docs/img_2@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Сертификат соответствия.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Сертификат соответствия.pdf</span>
+                                </a>
                             </div>
 
-                            <div class="text-block_3__right">
-                                <img src="images/content/about/img_4.jpg" srcset="images/content/about/img_4@2x.jpg 2x" alt="">
+                            <div class="docs__preview">
+                                <img class="js-preview" src="images/content/docs/img.jpg" srcset="images/content/docs/img@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-                                <img src="images/content/about/img_5.jpg" srcset="images/content/about/img_5@2x.jpg 2x" alt="">
+                    <div class="tab" data-target="2">
+                        <div class="docs">
+                            <div class="docs__list">
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_3.jpg" data-retina="images/content/docs/img_3@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Условия_транспортировки_и_хранения_панелей.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Инструкция по открытому монтажу.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_3.jpg" data-retina="images/content/docs/img_3@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Инструкция по скрытому монтажу.pdf</span>
+                                </a>
+                            </div>
+
+                            <div class="docs__preview">
+                                <img class="js-preview" src="images/content/docs/img_3.jpg" srcset="images/content/docs/img_3@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-target="3">
+                        <div class="docs">
+                            <div class="docs__list">
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Презентация FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Каталог FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_2.jpg" data-retina="images/content/docs/img_2@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Буклет FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Экономическое обоснование.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Типовая отделка стеновыми панелями FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img_2.jpg" data-retina="images/content/docs/img_2@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Негорючая отделка стеновыми панелями FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Типовая потолочная отделка FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Презентация дизайн-проектирования FADOCO interio.pdf</span>
+                                </a>
+
+                                <a class="doc-link" href="#" data-src="images/content/docs/img.jpg" data-retina="images/content/docs/img@2x.jpg 2x" target="_blank">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pdf_icon" />
+                                    </svg>
+                                    <span>Каталог продукции FADOCO interio.pdf</span>
+                                </a>
+                            </div>
+
+                            <div class="docs__preview">
+                                <img class="js-preview" src="images/content/docs/img.jpg" srcset="images/content/docs/img@2x.jpg 2x" alt="">
                             </div>
                         </div>
                     </div>
