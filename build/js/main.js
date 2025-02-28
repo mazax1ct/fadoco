@@ -309,3 +309,33 @@ $(document).on('mouseenter', '.doc-link', function () {
     preview.hide();
   }
 });
+
+//faq
+$(document).on('click', '.faq__title', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')) {
+    _this.addClass('is-active');
+    _this.closest('.faq').find('.faq__icon').addClass('is-active');
+    _this.find('use').attr('xlink:href', 'images/sprite.svg#minus_icon');
+    _this.closest('.faq').find('.faq__dropdown').slideDown();
+  } else {
+    _this.closest('.faq').find('.faq__icon').removeClass('is-active');
+    _this.find('use').attr('xlink:href', 'images/sprite.svg#plus_icon');
+    _this.closest('.faq').find('.faq__dropdown').slideUp(function() {
+      _this.removeClass('is-active');
+    });
+  }
+
+  return false;
+});
+
+//выключение кнопки в форме по чекбоксу
+$(document).on('input', 'input[name="terms"]', function () {
+  var _this = $(this);
+  console.log(_this);
+  if(_this.prop('checked') !== true) {
+    _this.closest('form').find('button[type="submit"]').attr('disabled', true);
+  } else {
+    _this.closest('form').find('button[type="submit"]').attr('disabled', false);
+  }
+});

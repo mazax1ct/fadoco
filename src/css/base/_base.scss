@@ -19,7 +19,7 @@ html {
 }
 
 .page {
-    background-color: #fff;
+    background-color: var(--color_white);
     color: var(--color_black);
     display: flex;
     flex-direction: column;
@@ -71,6 +71,28 @@ html {
 
         &--grey {
             background-color: var(--color_grey_3);
+        }
+    }
+
+    &__section-title-block {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .button {
+            @media(max-width: $sm - 0.02px) {
+                width: 100%;
+            }
         }
     }
 }
