@@ -19,12 +19,74 @@ var resize_scroll = function(e) {
 		header.removeClass('is-out');
 	}
 
+  if (scrolled > scrollPrev) {
+    $('.filter').removeClass('is-scrolled');
+	} else {
+    $('.filter').addClass('is-scrolled');
+	}
+
 	scrollPrev = scrolled;
 };
 
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //слайдер изображений
+  $('.js-big-slider').each(function(index, el) {
+    var slider = el.children[1];
+
+    new Swiper(slider, {
+      loop: true,
+      spaceBetween: 24,
+
+      navigation: {
+        nextEl: '.js-big-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-big-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
+
+      pagination: {
+        el: '.js-big-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        type: 'bullets',
+        clickable: true
+      },
+    });
+  });
+
+  //слайдер разделов каталога
+  $('.js-sections-slider').each(function(index, el) {
+    var slider = el.children[1];
+
+    new Swiper(slider, {
+      loop: true,
+      spaceBetween: 24,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3
+        },
+        1280: {
+          slidesPerView: 4,
+          slidesPerGroup: 4
+        },
+      },
+
+      navigation: {
+        nextEl: '.js-sections-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-sections-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
+
+      pagination: {
+        el: '.js-sections-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        type: 'bullets',
+        clickable: true
+      },
+    });
+  });
 
   //слайдер новостей
   $('.js-news-slider').each(function(index, el) {
@@ -338,4 +400,35 @@ $(document).on('input', 'input[name="terms"]', function () {
   } else {
     _this.closest('form').find('button[type="submit"]').attr('disabled', false);
   }
+});
+
+//открытие фильтра
+$(document).on('click', '.js-filter-opener', function () {
+  $('body').addClass('is-overflow');
+  $('.filter').fadeIn(function () {
+    $('.filter__inner').addClass('is-open');
+  });
+  return false;
+});
+
+//закрытие фильтра
+$(document).on('click', '.js-filter-closer', function () {
+  $('.filter__inner').removeClass('is-open');
+  $('.filter').fadeOut(function () {
+    $('body').removeClass('is-overflow');
+  });
+  return false;
+});
+
+//тогглер раздела фильтра
+$(document).on('click', '.js-filter-section-toggler', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')) {
+    _this.addClass('is-active');
+    _this.closest('.filter__section').find('.filter__section-dropdown').slideDown();
+  } else {
+    _this.removeClass('is-active');
+    _this.closest('.filter__section').find('.filter__section-dropdown').slideUp();
+  }
+  return false;
 });

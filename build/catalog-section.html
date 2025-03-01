@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Fadoco</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <link rel="preload" href="fonts/subset-Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Unbounded-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Unbounded-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.svg" alt="FADOCO">
+                </a>
+    
+                <div class="header__search">
+                    <form class="search-form" action="">
+                        <label class="search-form__label input-group">
+                            <input class="search-form__input input-group__input" type="text" name="q" placeholder="Поиск по сайту...">
+                        </label>
+    
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="header__phone">
+                    <a class="contact" href="tel:+79999999999">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 (999) 999-99-99</span>
+                    </a>
+                </div>
+    
+                <a class="header__callback button button--secondary button--h_52" href="javascript:void(0)" data-fancybox="callback_1" data-src="#callback">Заказать звонок</a>
+    
+                <button class="js-menu-toggler header__burger" type="button" title="Открыть меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="header__bottom">
+                <div class="header__search">
+                    <form class="search-form" action="">
+                        <label class="search-form__label input-group">
+                            <input class="search-form__input input-group__input" type="text" name="q" placeholder="Поиск по сайту...">
+                        </label>
+    
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="main-menu">
+                    <nav class="main-menu__nav">
+                        <ul class="main-menu__list -primary">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link is-active" href="#">Главная</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Каталог</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">О компании</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Новости</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Галерея</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Документация</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+    
+                <div class="header__contacts">
+                    <div class="header__phone">
+                        <a class="contact" href="tel:+79999999999">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                            <span>+7 (999) 999-99-99</span>
+                        </a>
+                    </div>
+    
+                    <a class="header__callback button button--secondary button--h_52" href="javascript:void(0)" data-fancybox="callback_2" data-src="#callback">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">Акриловое покрытие</li>
+            </ul>
+
+            <section class="page__section page__section--bottom_gap">
+                <div class="catalog">
+                    <div class="catalog__top">
+                        <h1>Акриловое покрытие</h1>
+
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__value-block" type="button">
+                                <div class="combobox__value">Сортировать по:</div>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_down" />
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <div class="combobox__list">
+                                    <a class="combobox__link is-active" href="#">По умолчанию</a>
+                                    <a class="combobox__link" href="#">По популярности</a>
+                                    <a class="combobox__link" href="#">Дороже</a>
+                                    <a class="combobox__link" href="#">Дешевле</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__top-separator"></div>
+
+                        <button class="js-filter-opener catalog-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#filter_icon" />
+                            </svg>
+                            <span>Фильтр</span>
+                        </button>
+                    </div>
+
+                    <div class="catalog__inner">
+                        <div class="catalog__filter">
+                            <div class="filter">
+                                <div class="js-filter-closer filter__bg"></div>
+
+                                <div class="filter__inner">
+                                    <div class="filter__top">
+                                        <div class="filter__title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#filter_icon" />
+                                            </svg>
+                                            <span>Фильтр</span>
+                                        </div>
+
+                                        <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#close_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="filter__body">
+                                        <form action="">
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Покрытие</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Дерево</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Камень</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Моноколор</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Класс пожарной опасности</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-0 / Негорючие</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-1 / Трудногорючие</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-2 / Умеренно горючие</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Размер</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">3.00м*1.22м</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">2.44м*1.22м</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Толщина</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">6мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">8мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">10мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">12мм</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <button class="filter__reset" type="reset">Сбросить фильтры</button>
+
+                                            <button class="filter__submit button button--secondary button--h_40" type="submit">Показать</button>
+                                        </form>
+
+                                        <div class="filter-banner">
+                                            <p class="filter-banner__title">Остались вопросы?</p>
+
+                                            <p class="filter-banner__text">Задайте их нашему<br> специалисту</p>
+
+                                            <button class="button button--primary button--h_40" type="button" data-fancybox="question" data-src="#question">Задать вопрос</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__list-block">
+                            <div class="catalog__list">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <ul class="pager">
+                                    <li class="pager__item pager__item--prev">
+                                        <a class="pager__link pager__link--arrow" href="#" title="Назад">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_left" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                            
+                                    <li class="pager__item"><a class="pager__link" href="#">1</a></li>
+                                    <li class="pager__item"><a class="pager__link is-active" href="#">2</a></li>
+                                    <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+                                    <li class="pager__item"><a class="pager__link" href="#">4</a></li>
+                                    <li class="pager__item"><a class="pager__link" href="#">5</a></li>
+                                    <li class="pager__item"><a class="pager__link" href="#">...</a></li>
+                                    <li class="pager__item"><a class="pager__link" href="#">12</a></li>
+                            
+                                    <li class="pager__item pager__item--next">
+                                        <a class="pager__link pager__link--arrow" href="#" title="Вперёд">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_right" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                                <a class="pagination__more button button--primary" href="#">Показать еще</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-block_1">
+                <div class="form-block_1__bg">
+                    <picture>
+                        <source srcset="images/content/forms/form_1_desk.jpg, images/content/forms/form_1_desk@2x.jpg 2x" media="(min-width: 1024px)">
+                        <img src="images/content/forms/form_1_mob.jpg" srcset="images/content/forms/form_1_mob@2x.jpg 2x" alt="">
+                    </picture>
+                </div>
+            
+                <div class="form">
+                    <form action="">
+                        <div class="form__logo">
+                            <img src="images/logo.svg" alt="FADOCO">
+                        </div>
+            
+                        <h2 class="form__title">Вы архитектор,<br> дизайнер, строитель?</h2>
+            
+                        <p class="form__text">Закажите бесплатные образцы</p>
+            
+                        <label class="input-group">
+                            <input class="input-group__input" type="text" name="name" placeholder="Имя" autocomplete="off">
+                        </label>
+            
+                        <label class="input-group">
+                            <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон" autocomplete="off">
+                        </label>
+            
+                        <label class="input-group">
+                            <input class="js-email-mask input-group__input" type="text" name="email" placeholder="Email" autocomplete="off">
+                        </label>
+            
+                        <label class="input-group">
+                            <textarea class="input-group__textarea" name="comment" placeholder="Комментарий"></textarea>
+                        </label>
+            
+                        <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
+            
+                        <label class="checkbox">
+                            <input type="checkbox" name="terms" checked>
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
+                        </label>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="to-top" href="#" title="Наверх">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#chevron_up" />
+                </svg>
+            </a>
+    
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="FADOCO">
+                    </div>
+    
+                    <p class="footer__slogan">Надежные стеновые панели<br> для любых интерьеров</p>
+    
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш WhatsApp">
+                            <img src="images/icons/wa.svg" alt="WhatsApp">
+                        </a>
+    
+                        <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Viber">
+                            <img src="images/icons/viber.svg" alt="Viber">
+                        </a>
+    
+                        <a href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                            <img src="images/icons/tg.svg" alt="Telegram">
+                        </a>
+    
+                        <a href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                            <img src="images/icons/vk.svg" alt="Вконтакте">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer__top-center">
+                    <ul class="footer__menu">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__top-right">
+                    <p class="contact">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#pin_icon" />
+                        </svg>
+                        <span>г. Москва, ул. Тверская д.5, кор.6</span>
+                    </p>
+    
+                    <a class="contact" href="tel:+78005556004">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 (800) 555-60-04</span>
+                    </a>
+    
+                    <a class="contact" href="mailto:info@fadoco.ru">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#email_icon" />
+                        </svg>
+                        <span>info@fadoco.ru</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">©2013-2024 FADOCO - фасадный сайдинг из фиброцемента, Все права защищены</div>
+                <div class="footer__developer"><a href="#" target="_blank" rel="nofollow noreferrer">Сайт разработан - AVDesigner</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="callback" class="popup form">
+        <form action="">
+            <div class="form__logo">
+                <img src="images/logo.svg" alt="FADOCO">
+            </div>
+    
+            <h2 class="form__title">Оставьте свой номер</h2>
+    
+            <p class="form__text">Специалист перезвонит Вам<br> в течение 10-ти минут</p>
+    
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="name" placeholder="Имя" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="comment" placeholder="Комментарий"></textarea>
+            </label>
+    
+            <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
+    
+            <label class="checkbox">
+                <input type="checkbox" name="terms" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
+            </label>
+        </form>
+    </div>
+    
+    <div id="question" class="popup form">
+        <form action="">
+            <div class="form__logo">
+                <img src="images/logo.svg" alt="FADOCO">
+            </div>
+    
+            <h2 class="form__title">Остались вопросы?</h2>
+    
+            <p class="form__text">Задайте их нашему специалисту</p>
+    
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="name" placeholder="Имя" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-email-mask input-group__input" type="text" name="email" placeholder="Email" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="question" placeholder="Вопрос"></textarea>
+            </label>
+    
+            <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
+    
+            <label class="checkbox">
+                <input type="checkbox" name="terms" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
+            </label>
+        </form>
+    </div>
+    
+    <div id="order" class="popup form">
+        <form action="">
+            <div class="form__logo">
+                <img src="images/logo.svg" alt="FADOCO">
+            </div>
+    
+            <h2 class="form__title">Вы архитектор,<br> дизайнер, строитель?</h2>
+    
+            <p class="form__text">Закажите бесплатные образцы</p>
+    
+            <label class="input-group">
+                <input class="input-group__input" type="text" name="name" placeholder="Имя" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-phone-mask input-group__input" type="text" name="phone" placeholder="Телефон" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <input class="js-email-mask input-group__input" type="text" name="email" placeholder="Email" autocomplete="off">
+            </label>
+    
+            <label class="input-group">
+                <textarea class="input-group__textarea" name="comment" placeholder="Комментарий"></textarea>
+            </label>
+    
+            <button class="button button--primary button--h_52" type="submit">Оставить запрос</button>
+    
+            <label class="checkbox">
+                <input type="checkbox" name="terms" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Соглашаюсь на обработку персональных данных</span>
+            </label>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/collapsing-menu.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

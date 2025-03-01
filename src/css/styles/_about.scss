@@ -47,17 +47,17 @@
 }
 
 .text-block_2 {
-    @media(min-width: $hd) {
+    @media(min-width: $md) {
         display: flex;
         flex-direction: row-reverse;
         gap: 10.5%;
     }
 
     &__image {
-        @media(max-width: $hd - 0.02px) {
+        @media(max-width: $md - 0.02px) {
             margin-bottom: 48px;
         }
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             display: flex;
             flex-direction: column;
             width: 40.5%;
@@ -68,16 +68,16 @@
             object-fit: cover;
             object-position: center;
             width: 100%;
-            @media(max-width: $hd - 0.02px) {
+            @media(max-width: $md - 0.02px) {
                 height: 450px;
             }
-            @media(min-width: $hd) {
+            @media(min-width: $md) {
                 flex-grow: 1;
             }
 
             &:not(:last-child) {
                 margin-bottom: 16px;
-                @media(min-width: $hd) {
+                @media(min-width: $md) {
                     margin-bottom: 40px;
                 }
             }
@@ -91,7 +91,7 @@
     }
 
     &__text {
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             width: 49%;
         }
 
@@ -276,6 +276,81 @@
         }
         @media(min-width: $md) {
             width: 58.4%;
+        }
+    }
+}
+
+.text-block_5 {
+    @media(min-width: $md) {
+        display: flex;
+        gap: 10.5%;
+    }
+
+    &__image {
+        @media(min-width: $md) {
+            display: flex;
+            flex-direction: column;
+            width: 40.5%;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            @media(max-width: $md - 0.02px) {
+                height: 450px;
+            }
+            @media(min-width: $md) {
+                flex-grow: 1;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                @media(min-width: $hd) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            width: 49%;
+        }
+
+        img {
+            display: block;
+            height: 312px;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 16px;
+            width: 100%;
+            @media(min-width: $sm) {
+                height: 460px;
+                margin-top: 24px;
+                margin-bottom: 32px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 48px;
+            }
+        }
+
+        h2 {
+            color: var(--color_red);
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .button {
+            @media(max-width: $sm - 0.02px) {
+                width: 100%;
+            }
         }
     }
 }

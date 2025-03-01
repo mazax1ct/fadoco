@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Fadoco</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">Акриловое покрытие</li>
+            </ul>
+
+            <section class="page__section page__section--bottom_gap">
+                <div class="catalog">
+                    <div class="catalog__top">
+                        <h1>Акриловое покрытие</h1>
+
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__value-block" type="button">
+                                <div class="combobox__value">Сортировать по:</div>
+
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_down" />
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <div class="combobox__list">
+                                    <a class="combobox__link is-active" href="#">По умолчанию</a>
+                                    <a class="combobox__link" href="#">По популярности</a>
+                                    <a class="combobox__link" href="#">Дороже</a>
+                                    <a class="combobox__link" href="#">Дешевле</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__top-separator"></div>
+
+                        <button class="js-filter-opener catalog-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#filter_icon" />
+                            </svg>
+                            <span>Фильтр</span>
+                        </button>
+                    </div>
+
+                    <div class="catalog__inner">
+                        <div class="catalog__filter">
+                            <div class="filter">
+                                <div class="js-filter-closer filter__bg"></div>
+
+                                <div class="filter__inner">
+                                    <div class="filter__top">
+                                        <div class="filter__title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#filter_icon" />
+                                            </svg>
+                                            <span>Фильтр</span>
+                                        </div>
+
+                                        <button class="js-filter-closer filter__closer" type="button" title="Закрыть">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#close_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="filter__body">
+                                        <form action="">
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Покрытие</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Дерево</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Камень</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">Моноколор</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Класс пожарной опасности</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-0 / Негорючие</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-1 / Трудногорючие</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">КМ-2 / Умеренно горючие</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Размер</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">3.00м*1.22м</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">2.44м*1.22м</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="filter__section">
+                                                <p class="filter__section-title">
+                                                    <span>Толщина</span>
+
+                                                    <button class="js-filter-section-toggler filter__section-toggler" type="button" title="Открыть">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                                        </svg>
+                                                    </button>
+                                                </p>
+
+                                                <div class="filter__section-dropdown">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">6мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">8мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">10мм</span>
+                                                    </label>
+
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="" name="">
+                                                        <span class="checkbox__icon"></span>
+                                                        <span class="checkbox__text">12мм</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <button class="filter__reset" type="reset">Сбросить фильтры</button>
+
+                                            <button class="filter__submit button button--secondary button--h_40" type="submit">Показать</button>
+                                        </form>
+
+                                        <div class="filter-banner">
+                                            <p class="filter-banner__title">Остались вопросы?</p>
+
+                                            <p class="filter-banner__text">Задайте их нашему<br> специалисту</p>
+
+                                            <button class="button button--primary button--h_40" type="button" data-fancybox="question" data-src="#question">Задать вопрос</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__list-block">
+                            <div class="catalog__list">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="">
+                                    </div>
+
+                                    <h3 class="card__title">Organza OR-10_1</h3>
+
+                                    <div class="card__props">
+                                        <div class="card__prop">
+                                            <span>Основа:</span>
+                                            <span>Фиброцемент</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Покрытие:</span>
+                                            <span>Виниловое</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Вид:</span>
+                                            <span>Камень</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Декор:</span>
+                                            <span>OR-10_1</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Тип монтажа:</span>
+                                            <span>Открытый</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Класс:</span>
+                                            <span>КМ-0 / Негорючие</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Размер:</span>
+                                            <span>3.00м*1.22м / 2.44м*1.22м</span>
+                                        </div>
+                                        <div class="card__prop">
+                                            <span>Толщина:</span>
+                                            <span>6 / 8 / 10 / 12 мм</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__bottom">
+                                        <div class="card__price-block">
+                                            <p class="card__price">от 795 ₽/м²</p>
+                                            <p class="card__stock">В наличии</p>
+                                        </div>
+
+                                        <a class="card__more button button--secondary button--h_40" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            //= template/common/pagination.html
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            //= template/common/form_1.html
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

@@ -53,6 +53,10 @@
             height: 16px;
             width: 16px;
         }
+
+        &.swiper-button-lock {
+            display: none;
+        }
     }
 
     &--catalog {
@@ -195,8 +199,33 @@
             display: none;
         }
 
+        &--flex {
+            @media(min-width: $sm) {
+                align-items: center;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                gap: 24px;
+            }
+
+            .swiper-pagination {
+                @media(min-width: $sm) {
+                    margin-top: 0;
+                }
+
+                &:not(:last-child) {
+                    @media(max-width: $sm - 0.02px) {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+
         .button {
-            width: 100%;
+            flex-shrink: 0;
+            @media(max-width: $sm - 0.02px) {
+                width: 100%;
+            }
         }
     }
 }

@@ -1,0 +1,141 @@
+.intro {
+    padding-top: 24px;
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        @media(min-width: $hd) {
+            font-size: 48px;
+            margin-bottom: 32px;
+        }
+    }
+
+    p {
+        max-width: 894px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $hd) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+.big-slider {
+    &__top {
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        @media(min-width: $sm) {
+            margin-left: auto;
+        }
+        @media(max-width: $sm - 0.02px) {
+            justify-content: flex-end;
+            margin-top: 54px;
+            margin-bottom: -54px;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        @media(min-width: $sm) {
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        .button {
+            @media(max-width: $sm - 0.02px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__button {
+        @include button-reset;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid var(--color_green);
+        cursor: pointer;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        transition: background-color 0.3s;
+        width: 32px;
+        @include hover {
+            background-color: #CBFDC9;
+        }
+
+        svg {
+            fill: var(--color_black);
+            height: 16px;
+            width: 16px;
+        }
+
+        &.swiper-button-lock {
+            display: none;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 30px;
+        display: flex;
+        gap: 16px;
+        justify-content: flex-end;
+        padding-right: 30px;
+        padding-right: 30px;
+        text-align: right;
+
+        .swiper-pagination-bullet {
+            border: 1px solid transparent;
+            border-radius: 0;
+            background-color: var(--color_grey_2);
+            height: 16px;
+            margin: 0;
+            opacity: 1;
+            width: 16px;
+
+            &.swiper-pagination-bullet-active {
+                border-color: var(--color_green);
+                background-color: #CBFDC9;
+            }
+        }
+    }
+
+    .swiper-slide {
+        img {
+            display: block;
+            height: 435px;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            @media(min-width: $sm) {
+                height: 590px;
+            }
+        }
+    }
+}

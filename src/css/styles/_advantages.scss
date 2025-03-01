@@ -1,0 +1,26 @@
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+    @media(min-width: $sm) {
+        gap: 32px;
+    }
+    @media(min-width: $md) {
+        gap: 48px 24px;
+        justify-content: space-between;
+    }
+}
+
+.advantage {
+    max-width: 307px;
+    width: 307px;
+
+    &__icon {
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}

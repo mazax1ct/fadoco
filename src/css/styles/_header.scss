@@ -48,15 +48,17 @@
         }
 
         .header__phone {
-            @media(max-width: $md - 0.02px) {
-                @include active-area;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                height: 30px;
-                position: relative;
-                width: 30px;
-                z-index: 1;
+            a {
+                @media(max-width: $md - 0.02px) {
+                    @include active-area;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    height: 30px;
+                    position: relative;
+                    width: 30px;
+                    z-index: 1;
+                }
             }
 
             span {
@@ -273,8 +275,8 @@
                     flex-grow: 1;
                 }
 
-                > button,
-                > a {
+                > a,
+                > button {
                     @media(min-width: $hd) {
                         align-items: center;
                         display: flex;
