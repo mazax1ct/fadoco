@@ -9,6 +9,22 @@
         gap: 48px 24px;
         justify-content: space-between;
     }
+
+    &--type_1 {
+        @media(max-width: $sm - 0.02px) {
+            flex-wrap: nowrap;
+            gap: 16px;
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+            overflow-x: auto;
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+        }
+
+        .advantage {
+            min-width: 307px;
+        }
+    }
 }
 
 .advantage {

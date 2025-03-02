@@ -194,12 +194,38 @@
     &__image {
         overflow: hidden;
         margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
 
         img {
             display: block;
             transform: scale(1);
             transition: transform 0.3s;
             width: 100%;
+        }
+    }
+
+    &__labels {
+        display: flex;
+        flex-wrap: wrap;
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    &__label {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 8px;
+
+        &--type_1 {
+            background-color: var(--color_red);
+        }
+
+        &--type_2 {
+            background-color: var(--color_green);
         }
     }
 
@@ -432,7 +458,12 @@
         display: none;
 
         .checkbox {
+            font-size: 14px;
             min-height: 24px;
+
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
         }
     }
 
